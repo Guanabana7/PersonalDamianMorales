@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genshin Impact Characters</title>
+    <link rel="icon" href="Imagenes/Geo.png" type="image/png">
+    <link rel="stylesheet" href="Estilos.css">
+</head>
+<body>
+    <header>
+        <div class="superior-container">
+            <button class="btn-superior"onclick="redireccionarACharacters()">Characters</button>
+            <button class="btn-superior"onclick="redireccionarABuilds()">Builds</button>
+            <button class="btn-superior"onclick="redireccionarATeams()">Teams</button>
+        </div>
+    </header>
+    <div class="container">
+        <div class="main-panel">
+            <div class="icon-panel">
+                <button class="btn-icon" data-filter="4stars">
+                    <img src="Imagenes/4Stars.png" alt="Icono">
+                </button>
+                <button class="btn-icon space" data-filter="5stars">
+                    <img src="Imagenes/5Stars.png" alt="Icono">
+                </button>
+                <button class="btn-icon" data-filter="anemo">
+                    <img src="Imagenes/Anemo.png" alt="Icono">
+                </button>
+                <button class="btn-icon" data-filter="cryo">
+                    <img src="Imagenes/Cryo.png" alt="Icono">
+                </button>
+                <button class="btn-icon" data-filter="electro">
+                    <img src="Imagenes/Electro.png" alt="Icono">
+                </button>
+                <button class="btn-icon" data-filter="dendro">
+                    <img src="Imagenes/Dendro.png" alt="Icono">
+                </button>
+                <button class="btn-icon" data-filter="geo">
+                    <img src="Imagenes/Geo.png" alt="Icono">
+                </button>
+                <button class="btn-icon" data-filter="hydro">
+                    <img src="Imagenes/Hydro.png" alt="Icono">
+                </button>
+                <button class="btn-icon space" data-filter="pyro">
+                    <img src="Imagenes/Pyro.png" alt="Icono">
+                </button>
+                <button class="btn-icon" data-filter="bow">
+                    <img src="Imagenes/weapon_bow.png" alt="Icono">
+                </button>
+                <button class="btn-icon" data-filter="catalyst">
+                    <img src="Imagenes/weapon_catalyst.png" alt="Icono">
+                </button>
+                <button class="btn-icon" data-filter="claymore">
+                    <img src="Imagenes/weapon_claymore.png" alt="Icono">
+                </button>
+                <button class="btn-icon" data-filter="polearm">
+                    <img src="Imagenes/weapon_polearm.png" alt="Icono">
+                </button>
+                <button class="btn-icon" data-filter="sword">
+                    <img src="Imagenes/weapon_sword.png" alt="Icono">
+                </button>
+            </div>
+            <div class="second-panel">
+                <!-- Albedo -->
+                <button id="albedo" class="character-button2 5stars geo sword">
+                    <div class="character-image">
+                        <img src="Imagenes/Personajes/Albedo.png" alt="Albedo">
+                    </div>
+                    <div class="character-details">
+                        <label class="character-name">Albedo</label>
+                        <span class="element">Elemento: Geo</span>
+                        <span class="weapon">Tipo de Arma: Espadón</span>
+                        <span class="stars">Calidad: 5 estrellas</span>
+                    </div>
+                </button>
+            
+                <!-- Alhaitham -->
+                <button id="alhaitham" class="character-button2 5stars dendro sword">
+                    <div class="character-image">
+                        <img src="Imagenes/Personajes/Alhaitham.png" alt="Alhaitham">
+                    </div>
+                    <div class="character-details">
+                        <label class="character-name">Alhaitham</label>
+                        <span class="element">Elemento: Geo</span>
+                        <span class="weapon">Tipo de Arma: Espadón</span>
+                        <span class="stars">Calidad: 5 estrellas</span>
+                    </div>
+                </button>
+            
+                <!-- Aloy -->
+                <button id="aloy" class="character-button2 5stars cryo bow">
+                    <div class="character-image">
+                        <img src="Imagenes/Personajes/Aloy.png" alt="Aloy">
+                    </div>
+                    <div class="character-details">
+                        <label class="character-name">Aloy</label>
+                        <span class="element">Elemento: Cryo</span>
+                        <span class="weapon">Tipo de Arma: Arco</span>
+                        <span class="stars">Calidad: 5 estrellas</span>
+                    </div>
+                </button>
+            
+                <!-- Ayaka -->
+                <button id="ayaka" class="character-button2 5stars cryo sword">
+                    <div class="character-image">
+                        <img src="Imagenes/Personajes/Ayaka.png" alt="Ayaka">
+                    </div>
+                    <div class="character-details">
+                        <label class="character-name">Ayaka</label>
+                        <span class="element">Elemento: Cryo</span>
+                        <span class="weapon">Tipo de Arma: Espadón</span>
+                        <span class="stars">Calidad: 5 estrellas</span>
+                    </div>
+                </button>
+                <!-- Ayato -->
+                <button id="ayato" class="character-button2 5stars hydro sword">
+                    <div class="character-image">
+                        <img src="Imagenes/Personajes/Ayato.png" alt="Ayato">
+                    </div>
+                    <div class="character-details">
+                        <label class="character-name">Ayato</label>
+                        <span class="element">Elemento: Cryo</span>
+                        <span class="weapon">Tipo de Arma: Espadón</span>
+                        <span class="stars">Calidad: 5 estrellas</span>
+                    </div>
+                </button>
+            
+                <!-- Baizhu -->
+                <button id="ayato" class="character-button2 5stars hydro sword">
+                    <div class="character-image">
+                        <img src="Imagenes/Personajes/Baizhu.png" alt="Baizhu">
+                    </div>
+                    <div class="character-details">
+                        <label class="character-name">Baizhu</label>
+                        <span class="element">Elemento: Dendro</span>
+                        <span class="weapon">Tipo de Arma: Espadón</span>
+                        <span class="stars">Calidad: 5 estrellas</span>
+                    </div>
+                </button>
+            
+                <!-- Childe -->
+                <button id="ayato" class="character-button2 5stars hydro sword">
+                    <div class="character-image">
+                        <img src="Imagenes/Personajes/Childe.png" alt="Childe">
+                    </div>
+                    <div class="character-details">
+                        <label class="character-name">Childe</label>
+                        <span class="element">Elemento: Hidro</span>
+                        <span class="weapon">Tipo de Arma: Arco</span>
+                        <span class="stars">Calidad: 5 estrellas</span>
+                    </div>
+                </button>
+            
+                <!-- Cyno -->
+                <button id="cyno" class="character-button2 5stars electro polearm">
+                    <div class="character-image">
+                        <img src="Imagenes/Personajes/Cyno.png" alt="Cyno">
+                    </div>
+                    <div class="character-details">
+                        <label class="character-name">Cyno</label>
+                        <span class="element">Elemento: Geo</span>
+                        <span class="weapon">Tipo de Arma: Arco</span>
+                        <span class="stars">Calidad: 5 estrellas</span>
+                    </div>
+                </button>
+            
+                <!-- Dehya -->
+                <button id="dehya" class="character-button2 5stars pyro claymore">
+                    <div class="character-image">
+                        <img src="Imagenes/Personajes/Dehya.png" alt="Dehya">
+                    </div>
+                    <div class="character-details">
+                        <label class="character-name">Dehya</label>
+                        <span class="element">Elemento: Geo</span>
+                        <span class="weapon">Tipo de Arma: Espadón</span>
+                        <span class="stars">Calidad: 5 estrellas</span>
+                    </div>
+                </button>
+            
+                <!-- Diluc -->
+                <button id="diluc" class="character-button2 5stars pyro claymore">
+                    <div class="character-image">
+                        <img src="Imagenes/Personajes/Diluc.png" alt="Diluc">
+                    </div>
+                    <div class="character-details">
+                        <label class="character-name">Diluc</label>
+                        <span class="element">Elemento: Pyro</span>
+                        <span class="weapon">Tipo de Arma: Espadón</span>
+                        <span class="stars">Calidad: 5 estrellas</span>
+                    </div>
+                </button>
+            
+                <!-- Eula -->
+                <button id="eula" class="character-button2 5stars cryo claymore">
+                    <div class="character-image">
+                        <img src="Imagenes/Personajes/Eula.png" alt="Eula">
+                    </div>
+                    <div class="character-details">
+                        <label class="character-name">Eula</label>
+                        <span class="element">Elemento: Cryo</span>
+                        <span class="weapon">Tipo de Arma: Espadón</span>
+                        <span class="stars">Calidad: 5 estrellas</span>
+                    </div>
+                </button>
+            
+                <!-- Ganyu -->
+                <button id="ganyu" class="character-button2 5stars cryo bow">
+                    <div class="character-image">
+                        <img src="Imagenes/Personajes/Ganyu.png" alt="Ganyu">
+                    </div>
+                    <div class="character-details">
+                        <label class="character-name">Ganyu</label>
+                        <span class="element">Elemento: Cryo</span>
+                        <span class="weapon">Tipo de Arma: Arco</span>
+                        <span class="stars">Calidad: 5 estrellas</span>
+                    </div>
+                </button>
+                <!-- Hu Tao -->
+                <button id="hutao" class="character-button2 5stars pyro polearm">
+                    <div class="character-image">
+                        <img src="Imagenes/Personajes/Hu Tao.png" alt="Hu Tao">
+                    </div>
+                    <div class="character-details">
+                        <label class="character-name">Hu Tao</label>
+                        <span class="element">Elemento: Pyro</span>
+                        <span class="weapon">Tipo de Arma: Lanza</span>
+                        <span class="stars">Calidad: 5 estrellas</span>
+                    </div>
+                </button>
+
+                <!-- Itto -->
+                <button id="itto" class="character-button2 5stars geo claymore">
+                    <div class="character-image">
+                        <img src="Imagenes/Personajes/Itto.png" alt="Itto">
+                    </div>
+                    <div class="character-details">
+                        <label class="character-name">Itto</label>
+                        <span class="element">Elemento: Geo</span>
+                        <span class="weapon">Tipo de Arma: Espadón</span>
+                        <span class="stars">Calidad: 5 estrellas</span>
+                    </div>
+                </button>
+
+                <!-- Jean -->
+                <button id="jean" class="character-button2 5stars anemo sword">
+                    <div class="character-image">
+                        <img src="Imagenes/Personajes/Jean.png" alt="Jean">
+                    </div>
+                    <div class="character-details">
+                        <label class="character-name">Jean</label>
+                        <span class="element">Elemento: Anemo</span>
+                        <span class="weapon">Tipo de Arma: Espadón</span>
+                        <span class="stars">Calidad: 5 estrellas</span>
+                    </div>
+                </button>
+
+                <!-- Kazuha -->
+                <button id="kazuha" class="character-button2 5stars anemo sword">
+                    <div class="character-image">
+                        <img src="Imagenes/Personajes/Kazuha.png" alt="Kazuha">
+                    </div>
+                    <div class="character-details">
+                        <label class="character-name">Kazuha</label>
+                        <span class="element">Elemento: Anemo</span>
+                        <span class="weapon">Tipo de Arma: Espadón</span>
+                        <span class="stars">Calidad: 5 estrellas</span>
+                    </div>
+                </button>
+
+                <!-- Keqing -->
+                <button id="keqing" class="character-button2 5stars electro sword">
+                    <div class="character-image">
+                        <img src="Imagenes/Personajes/Keqing.png" alt="Keqing">
+                    </div>
+                    <div class="character-details">
+                        <label class="character-name">Keqing</label>
+                        <span class="element">Elemento: Electro</span>
+                        <span class="weapon">Tipo de Arma: Espadón</span>
+                        <span class="stars">Calidad: 5 estrellas</span>
+                    </div>
+                </button>
+
+                <!-- Klee -->
+                <button id="klee" class="character-button2 5stars pyro catalyst">
+                    <div class="character-image">
+                        <img src="Imagenes/Personajes/Klee.png" alt="Klee">
+                    </div>
+                    <div class="character-details">
+                        <label class="character-name">Klee</label>
+                        <span class="element">Elemento: Pyro</span>
+                        <span class="weapon">Tipo de Arma: Catalizador</span>
+                        <span class="stars">Calidad: 5 estrellas</span>
+                    </div>
+                </button>
+
+                <!-- Kokomi -->
+                <button id="kokomi" class="character-button2 5stars hydro catalyst">
+                    <div class="character-image">
+                        <img src="Imagenes/Personajes/Kokomi.png" alt="Kokomi">
+                    </div>
+                    <div class="character-details">
+                        <label class="character-name">Kokomi</label>
+                        <span class="element">Elemento: Hydro</span>
+                        <span class="weapon">Tipo de Arma: Espadón</span>
+                        <span class="stars">Calidad: 5 estrellas</span>
+                    </div>
+                </button>
+
+                <!-- Lyney -->
+                <button id="lyney" class="character-button2 5stars pyro bow">
+                    <div class="character-image">
+                        <img src="Imagenes/Personajes/Lyney.png" alt="Lyney">
+                    </div>
+                    <div class="character-details">
+                        <label class="character-name">Lyney</label>
+                        <span class="element">Elemento: Electro</span>
+                        <span class="weapon">Tipo de Arma: Espadón</span>
+                        <span class="stars">Calidad: 4 estrellas</span>
+                    </div>
+                </button>
+
+                <!-- Mona -->
+                <button id="mona" class="character-button2 5stars hydro catalyst">
+                    <div class="character-image">
+                        <img src="Imagenes/Personajes/Mona.png" alt="Mona">
+                    </div>
+                    <div class="character-details">
+                        <label class="character-name">Mona</label>
+                        <span class="element">Elemento: Hydro</span>
+                        <span class="weapon">Tipo de Arma: Catalizador</span>
+                        <span class="stars">Calidad: 5 estrellas</span>
+                    </div>
+                </button>
+
+                <!-- Nahida -->
+                <button id="nahida" class="character-button2 5stars dendro catalyst">
+                    <div class="character-image">
+                        <img src="Imagenes/Personajes/Nahida.png" alt="Nahida">
+                    </div>
+                    <div class="character-details">
+                        <label class="character-name">Nahida</label>
+                        <span class="element">Elemento: Hydro</span>
+                        <span class="weapon">Tipo de Arma: Catalizador</span>
+                        <span class="stars">Calidad: 4 estrellas</span>
+                    </div>
+                </button>
+
+                <!-- Nilou -->
+                <button id="nilou" class="character-button2 5stars hydro sword">
+                    <div class="character-image">
+                        <img src="Imagenes/Personajes/Nilou.png" alt="Nilou">
+                    </div>
+                    <div class="character-details">
+                        <label class="character-name">Nilou</label>
+                        <span class="element">Elemento: Hydro</span>
+                        <span class="weapon">Tipo de Arma: Espadón</span>
+                        <span class="stars">Calidad: 5 estrellas</span>
+                    </div>
+                </button>
+
+                <!-- Qiqi -->
+                <button id="qiqi" class="character-button2 5stars cryo sword">
+                    <div class="character-image">
+                        <img src="Imagenes/Personajes/Qiqi.png" alt="Qiqi">
+                    </div>
+                    <div class="character-details">
+                        <label class="character-name">Qiqi</label>
+                        <span class="element">Elemento: Cryo</span>
+                        <span class="weapon">Tipo de Arma: Espadón</span>
+                        <span class="stars">Calidad: 5 estrellas</span>
+                    </div>
+                </button>
+
+                <!-- Raiden Shogun -->
+                <button id="raiden" class="character-button2 5stars electro polearm">
+                    <div class="character-image">
+                        <img src="Imagenes/Personajes/Raiden.png" alt="Raiden Shogun">
+                    </div>
+                    <div class="character-details">
+                        <label class="character-name">Raiden Shogun</label>
+                        <span class="element">Elemento: Electro</span>
+                        <span class="weapon">Tipo de Arma: Espadón</span>
+                        <span class="stars">Calidad: 5 estrellas</span>
+                    </div>
+                </button>
+                <!-- Venti -->
+                <button id="venti" class="character-button2 5stars anemo bow">
+                    <div class="character-image">
+                        <img src="Imagenes/Personajes/Venti.png" alt="Venti">
+                    </div>
+                    <div class="character-details">
+                        <label class="character-name">Venti</label>
+                        <span class="element">Elemento: Anemo</span>
+                        <span class="weapon">Tipo de Arma: Arco</span>
+                        <span class="stars">Calidad: 5 estrellas</span>
+                    </div>
+                </button>
+                <!-- Xiao -->
+                <button id="xiao" class="character-button2 5stars anemo polearm">
+                    <div class="character-image">
+                        <img src="Imagenes/Personajes/Xiao.png" alt="Xiao">
+                    </div>
+                    <div class="character-details">
+                        <label class="character-name">Xiao</label>
+                        <span class="element">Elemento: Anemo</span>
+                        <span class="weapon">Tipo de Arma: Lanza</span>
+                        <span class="stars">Calidad: 5 estrellas</span>
+                    </div>
+                </button>
+
+                <!-- Zhongli -->
+                <button id="zhongli" class="character-button2 5stars geo polearm">
+                    <div class="character-image">
+                        <img src="Imagenes/Personajes/Zhongli.png" alt="Zhongli">
+                    </div>
+                    <div class="character-details">
+                        <label class="character-name">Zhongli</label>
+                        <span class="element">Elemento: Geo</span>
+                        <span class="weapon">Tipo de Arma: Lanza</span>
+                        <span class="stars">Calidad: 5 estrellas</span>
+                    </div>
+                </button>
+                <!-- Amber -->
+                <button id="amber" class="character-button2 4stars pyro bow">
+                    <div class="character-image">
+                        <img src="Imagenes/Personajes/Amber.png" alt="Amber">
+                    </div>
+                    <div class="character-details">
+                        <label class="character-name">Amber</label>
+                        <span class="element">Elemento: Pyro</span>
+                        <span class="weapon">Tipo de Arma: Arco</span>
+                        <span class="stars">Calidad: 4 estrellas</span>
+                    </div>
+                </button>
+
+                <!-- Barbara -->
+                <button id="barbara" class="character-button2 4stars hydro catalyst">
+                    <div class="character-image">
+                        <img src="Imagenes/Personajes/Barbara.png" alt="Barbara">
+                    </div>
+                    <div class="character-details">
+                        <label class="character-name">Barbara</label>
+                        <span class="element">Elemento: Hydro</span>
+                        <span class="weapon">Tipo de Arma: Catalizador</span>
+                        <span class="stars">Calidad: 4 estrellas</span>
+                    </div>
+                </button>
+
+                <!-- Beidou -->
+                <button id="beidou" class="character-button2 4stars electro claymore">
+                    <div class="character-image">
+                        <img src="Imagenes/Personajes/Beidou.png" alt="Beidou">
+                    </div>
+                    <div class="character-details">
+                        <label class="character-name">Beidou</label>
+                        <span class="element">Elemento: Electro</span>
+                        <span class="weapon">Tipo de Arma: Espada</span>
+                        <span class="stars">Calidad: 4 estrellas</span>
+                    </div>
+                </button>
+
+                <!-- Bennett -->
+                <button id="bennett" class="character-button2 4stars pyro sword">
+                    <div class="character-image">
+                        <img src="Imagenes/Personajes/Bennett.png" alt="Bennett">
+                    </div>
+                    <div class="character-details">
+                        <label class="character-name">Bennett</label>
+                        <span class="element">Elemento: Pyro</span>
+                        <span class="weapon">Tipo de Arma: Espada</span>
+                        <span class="stars">Calidad: 4 estrellas</span>
+                    </div>
+                </button>
+
+                <!-- Candace -->
+                <button id="candace" class="character-button2 4stars hydro polearm">
+                    <div class="character-image">
+                        <img src="Imagenes/Personajes/Candace.png" alt="Candace">
+                    </div>
+                    <div class="character-details">
+                        <label class="character-name">Candace</label>
+                        <span class="element">Elemento: Electro</span>
+                        <span class="weapon">Tipo de Arma: Arcabuz</span>
+                        <span class="stars">Calidad: 4 estrellas</span>
+                    </div>
+                </button>
+
+                <!-- Chongyun -->
+                <button id="chongyun" class="character-button2 4stars cryo claymore">
+                    <div class="character-image">
+                        <img src="Imagenes/Personajes/Chongyun.png" alt="Chongyun">
+                    </div>
+                    <div class="character-details">
+                        <label class="character-name">Chongyun</label>
+                        <span class="element">Elemento: Cryo</span>
+                        <span class="weapon">Tipo de Arma: Espada Claymore</span>
+                        <span class="stars">Calidad: 4 estrellas</span>
+                    </div>
+                </button>
+
+                <!-- Collei -->
+                <button id="collei" class="character-button2 4stars dendro bow">
+                    <div class="character-image">
+                        <img src="Imagenes/Personajes/Collei.png" alt="Collei">
+                    </div>
+                    <div class="character-details">
+                        <label class="character-name">Collei</label>
+                        <span class="element">Elemento: Anemo</span>
+                        <span class="weapon">Tipo de Arma: Arco</span>
+                        <span class="stars">Calidad: 4 estrellas</span>
+                    </div>
+                </button>
+
+                <!-- Diona -->
+                <button id="diona" class="character-button2 4stars cryo bow">
+                    <div class="character-image">
+                        <img src="Imagenes/Personajes/Diona.png" alt="Diona">
+                    </div>
+                    <div class="character-details">
+                        <label class="character-name">Diona</label>
+                        <span class="element">Elemento: Cryo</span>
+                        <span class="weapon">Tipo de Arma: Arco</span>
+                        <span class="stars">Calidad: 4 estrellas</span>
+                    </div>
+                </button>
+
+                <!-- Dori -->
+                <button id="dori" class="character-button2 4stars electro claymore">
+                    <div class="character-image">
+                        <img src="Imagenes/Personajes/Dori.png" alt="Dori">
+                    </div>
+                    <div class="character-details">
+                        <label class="character-name">Dori</label>
+                        <span class="element">Elemento: Anemo</span>
+                        <span class="weapon">Tipo de Arma: Catalizador</span>
+                        <span class="stars">Calidad: 4 estrellas</span>
+                    </div>
+                </button>
+
+                <!-- Faruzan -->
+                <button id="faruzan" class="character-button2 4stars anemo bow">
+                    <div class="character-image">
+                        <img src="Imagenes/Personajes/Faruzan.png" alt="Faruzan">
+                    </div>
+                    <div class="character-details">
+                        <label class="character-name">Faruzan</label>
+                        <span class="element">Elemento: Pyro</span>
+                        <span class="weapon">Tipo de Arma: Arcabuz</span>
+                        <span class="stars">Calidad: 4 estrellas</span>
+                    </div>
+                </button>
+
+                <!-- Fischl -->
+                <button id="fischl" class="character-button2 4stars electro bow">
+                    <div class="character-image">
+                        <img src="Imagenes/Personajes/Fischl.png" alt="Fischl">
+                    </div>
+                    <div class="character-details">
+                        <label class="character-name">Fischl</label>
+                        <span class="element">Elemento: Electro</span>
+                        <span class="weapon">Tipo de Arma: Arco</span>
+                        <span class="stars">Calidad: 4 estrellas</span>
+                    </div>
+                </button>
+
+                <!-- Freminet -->
+                <button id="freminet" class="character-button2 4stars cryo claymore">
+                    <div class="character-image">
+                        <img src="Imagenes/Personajes/Freminet.png" alt="Freminet">
+                    </div>
+                    <div class="character-details">
+                        <label class="character-name">Freminet</label>
+                        <span class="element">Elemento: Geo</span>
+                        <span class="weapon">Tipo de Arma: Catalizador</span>
+                        <span class="stars">Calidad: 4 estrellas</span>
+                    </div>
+                </button>
+
+                <!-- Gorou -->
+                <button id="gorou" class="character-button2 4stars geo bow">
+                    <div class="character-image">
+                        <img src="Imagenes/Personajes/Gorou.png" alt="Gorou">
+                    </div>
+                    <div class="character-details">
+                        <label class="character-name">Gorou</label>
+                        <span class="element">Elemento: Geo</span>
+                        <span class="weapon">Tipo de Arma: Claymore</span>
+                        <span class="stars">Calidad: 4 estrellas</span>
+                    </div>
+                </button>
+
+                <!-- Heizou -->
+                <button id="heizou" class="character-button2 4stars anemo catalyst">
+                    <div class="character-image">
+                        <img src="Imagenes/Personajes/Heizou.png" alt="Heizou">
+                    </div>
+                    <div class="character-details">
+                        <label class="character-name">Heizou</label>
+                        <span class="element">Elemento: Electro</span>
+                        <span class="weapon">Tipo de Arma: Catalizador</span>
+                        <span class="stars">Calidad: 4 estrellas</span>
+                    </div>
+                </button>
+
+                <!-- Kaeya -->
+                <button id="kaeya" class="character-button2 4stars cryo sword">
+                    <div class="character-image">
+                        <img src="Imagenes/Personajes/Kaeya.png" alt="Kaeya">
+                    </div>
+                    <div class="character-details">
+                        <label class="character-name">Kaeya</label>
+                        <span class="element">Elemento: Cryo</span>
+                        <span class="weapon">Tipo de Arma: Espada</span>
+                        <span class="stars">Calidad: 4 estrellas</span>
+                    </div>
+                </button>
+
+                <!-- Kaveh -->
+                <button id="kaveh" class="character-button2 4stars dendro claymore">
+                    <div class="character-image">
+                        <img src="Imagenes/Personajes/Kaveh.png" alt="Kaveh">
+                    </div>
+                    <div class="character-details">
+                        <label class="character-name">Kaveh</label>
+                        <span class="element">Elemento: Hydro</span>
+                        <span class="weapon">Tipo de Arma: Arcabuz</span>
+                        <span class="stars">Calidad: 4 estrellas</span>
+                    </div>
+                </button>
+
+                <!-- Kirara -->
+                <button id="kirara" class="character-button2 4stars dendro sword">
+                    <div class="character-image">
+                        <img src="Imagenes/Personajes/Kirara.png" alt="Kirara">
+                    </div>
+                    <div class="character-details">
+                        <label class="character-name">Kirara</label>
+                        <span class="element">Elemento: Electro</span>
+                        <span class="weapon">Tipo de Arma: Espada</span>
+                        <span class="stars">Calidad: 4 estrellas</span>
+                    </div>
+                </button>
+
+                <!-- Kuki Shinobu -->
+                <button id="kuki-shinobu" class="character-button2 4stars electro sword">
+                    <div class="character-image">
+                        <img src="Imagenes/Personajes/Kuki Shinobu.png" alt="Kuki Shinobu">
+                    </div>
+                    <div class="character-details">
+                        <label class="character-name">Kuki Shinobu</label>
+                        <span class="element">Elemento: Electro</span>
+                        <span class="weapon">Tipo de Arma: Catalizador</span>
+                        <span class="stars">Calidad: 4 estrellas</span>
+                    </div>
+                </button>
+
+                <!-- Layla -->
+                <button id="layla" class="character-button2 4stars hydro sword">
+                    <div class="character-image">
+                        <img src="Imagenes/Personajes/Layla.png" alt="Layla">
+                    </div>
+                    <div class="character-details">
+                        <label class="character-name">Layla</label>
+                        <span class="element">Elemento: Anemo</span>
+                        <span class="weapon">Tipo de Arma: Arco</span>
+                        <span class="stars">Calidad: 4 estrellas</span>
+                    </div>
+                </button>
+
+                <!-- Lisa -->
+                <button id="lisa" class="character-button2 4stars electro catalyst">
+                    <div class="character-image">
+                        <img src="Imagenes/Personajes/Lisa.png" alt="Lisa">
+                    </div>
+                    <div class="character-details">
+                        <label class="character-name">Lisa</label>
+                        <span class="element">Elemento: Electro</span>
+                        <span class="weapon">Tipo de Arma: Catalizador</span>
+                        <span class="stars">Calidad: 4 estrellas</span>
+                    </div>
+                </button>
+
+                <!-- Lynette -->
+                <button id="lynette" class="character-button2 4stars anemo sword">
+                    <div class="character-image">
+                        <img src="Imagenes/Personajes/Lynette.png" alt="Lynette">
+                    </div>
+                    <div class="character-details">
+                        <label class="character-name">Lynette</label>
+                        <span class="element">Elemento: Electro</span>
+                        <span class="weapon">Tipo de Arma: Catalizador</span>
+                        <span class="stars">Calidad: 4 estrellas</span>
+                    </div>
+                </button>
+
+                <!-- Mika -->
+                <button id="mika" class="character-button2 4stars cryo polearm">
+                    <div class="character-image">
+                        <img src="Imagenes/Personajes/Mika.png" alt="Mika">
+                    </div>
+                    <div class="character-details">
+                        <label class="character-name">Mika</label>
+                        <span class="element">Elemento: Anemo</span>
+                        <span class="weapon">Tipo de Arma: Espada</span>
+                        <span class="stars">Calidad: 4 estrellas</span>
+                    </div>
+                </button>
+
+                <!-- Ningguang -->
+                <button id="ningguang" class="character-button2 4stars geo catalyst">
+                    <div class="character-image">
+                        <img src="Imagenes/Personajes/Ningguang.png" alt="Ningguang">
+                    </div>
+                    <div class="character-details">
+                        <label class="character-name">Ningguang</label>
+                        <span class="element">Elemento: Geo</span>
+                        <span class="weapon">Tipo de Arma: Catalizador</span>
+                        <span class="stars">Calidad: 4 estrellas</span>
+                    </div>
+                </button>
+
+                <!-- Noelle -->
+                <button id="noelle" class="character-button2 4stars geo claymore">
+                    <div class="character-image">
+                        <img src="Imagenes/Personajes/Noelle.png" alt="Noelle">
+                    </div>
+                    <div class="character-details">
+                        <label class="character-name">Noelle</label>
+                        <span class="element">Elemento: Geo</span>
+                        <span class="weapon">Tipo de Arma: Espada Claymore</span>
+                        <span class="stars">Calidad: 4 estrellas</span>
+                    </div>
+                </button>
+                <!-- Razor -->
+                <button id="razor" class="character-button2 4stars electro claymore">
+                    <div class="character-image">
+                        <img src="Imagenes/Personajes/Razor.png" alt="Razor">
+                    </div>
+                    <div class="character-details">
+                        <label class="character-name">Razor</label>
+                        <span class="element">Elemento: Electro</span>
+                        <span class="weapon">Tipo de Arma: Espada Claymore</span>
+                        <span class="stars">Calidad: 4 estrellas</span>
+                    </div>
+                </button>
+
+                <!-- Rosaria -->
+                <button id="rosaria" class="character-button2 4stars cryo polearm">
+                    <div class="character-image">
+                        <img src="Imagenes/Personajes/Rosaria.png" alt="Rosaria">
+                    </div>
+                    <div class="character-details">
+                        <label class="character-name">Rosaria</label>
+                        <span class="element">Elemento: Cryo</span>
+                        <span class="weapon">Tipo de Arma: Lanza</span>
+                        <span class="stars">Calidad: 4 estrellas</span>
+                    </div>
+                </button>
+
+                <!-- Sara -->
+                <button id="sara" class="character-button2 4stars electro sword">
+                    <div class="character-image">
+                        <img src="Imagenes/Personajes/Sara.png" alt="Sara">
+                    </div>
+                    <div class="character-details">
+                        <label class="character-name">Sara</label>
+                        <span class="element">Elemento: Electro</span>
+                        <span class="weapon">Tipo de Arma: Arco</span>
+                        <span class="stars">Calidad: 4 estrellas</span>
+                    </div>
+                </button>
+
+                <!-- Sayu -->
+                <button id="sayu" class="character-button2 4stars anemo claymore">
+                    <div class="character-image">
+                        <img src="Imagenes/Personajes/Sayu.png" alt="Sayu">
+                    </div>
+                    <div class="character-details">
+                        <label class="character-name">Sayu</label>
+                        <span class="element">Elemento: Anemo</span>
+                        <span class="weapon">Tipo de Arma: Espada</span>
+                        <span class="stars">Calidad: 4 estrellas</span>
+                    </div>
+                </button>
+
+                <!-- Sucrose -->
+                <button id="sucrose" class="character-button2 4stars anemo catalyst">
+                    <div class="character-image">
+                        <img src="Imagenes/Personajes/Sucrose.png" alt="Sucrose">
+                    </div>
+                    <div class="character-details">
+                        <label class="character-name">Sucrose</label>
+                        <span class="element">Elemento: Anemo</span>
+                        <span class="weapon">Tipo de Arma: Catalizador</span>
+                        <span class="stars">Calidad: 4 estrellas</span>
+                    </div>
+                </button>
+
+                <!-- Thoma -->
+                <button id="thoma" class="character-button2 4stars pyro polearm">
+                    <div class="character-image">
+                        <img src="Imagenes/Personajes/Thoma.png" alt="Thoma">
+                    </div>
+                    <div class="character-details">
+                        <label class="character-name">Thoma</label>
+                        <span class="element">Elemento: Pyro</span>
+                        <span class="weapon">Tipo de Arma: Lanza</span>
+                        <span class="stars">Calidad: 4 estrellas</span>
+                    </div>
+                </button>
+
+                <!-- Xiangling -->
+                <button id="xiangling" class="character-button2 4stars pyro polearm">
+                    <div class="character-image">
+                        <img src="Imagenes/Personajes/Xiangling.png" alt="Xiangling">
+                    </div>
+                    <div class="character-details">
+                        <label class="character-name">Xiangling</label>
+                        <span class="element">Elemento: Pyro</span>
+                        <span class="weapon">Tipo de Arma: Lanza</span>
+                        <span class="stars">Calidad: 4 estrellas</span>
+                    </div>
+                </button>
+
+                <!-- Xingqiu -->
+                <button id="xingqiu" class="character-button2 4stars hydro sword">
+                    <div class="character-image">
+                        <img src="Imagenes/Personajes/Xingqiu.png" alt="Xingqiu">
+                    </div>
+                    <div class="character-details">
+                        <label class="character-name">Xingqiu</label>
+                        <span class="element">Elemento: Hydro</span>
+                        <span class="weapon">Tipo de Arma: Espada</span>
+                        <span class="stars">Calidad: 4 estrellas</span>
+                    </div>
+                </button>
+                <!-- Xinyan -->
+                <button id="xinyan" class="character-button2 4stars pyro claymore">
+                    <div class="character-image">
+                        <img src="Imagenes/Personajes/Xinyan.png" alt="Xinyan">
+                    </div>
+                    <div class="character-details">
+                        <label class="character-name">Xinyan</label>
+                        <span class="element">Elemento: Pyro</span>
+                        <span class="weapon">Tipo de Arma: Lanza</span>
+                        <span class="stars">Calidad: 4 estrellas</span>
+                    </div>
+                </button>
+
+                <!-- Yanfei -->
+                <button id="yanfei" class="character-button2 4stars pyro catalyst">
+                    <div class="character-image">
+                        <img src="Imagenes/Personajes/Yanfei.png" alt="Yanfei">
+                    </div>
+                    <div class="character-details">
+                        <label class="character-name">Yanfei</label>
+                        <span class="element">Elemento: Pyro</span>
+                        <span class="weapon">Tipo de Arma: Catalizador</span>
+                        <span class="stars">Calidad: 4 estrellas</span>
+                    </div>
+                </button>
+
+                <!-- Yaoyao -->
+                <button id="yaoyao" class="character-button2 4stars dendro polearm">
+                    <div class="character-image">
+                        <img src="Imagenes/Personajes/Yaoyao.png" alt="Yaoyao">
+                    </div>
+                    <div class="character-details">
+                        <label class="character-name">Yaoyao</label>
+                        <span class="element">Elemento: Geo</span>
+                        <span class="weapon">Tipo de Arma: Catalizador</span>
+                        <span class="stars">Calidad: 4 estrellas</span>
+                    </div>
+                </button>
+
+                <!-- Yun Jin -->
+                <button id="yun-jin" class="character-button2 4stars geo polearm">
+                    <div class="character-image">
+                        <img src="Imagenes/Personajes/Yun Jin.png" alt="Yun Jin">
+                    </div>
+                    <div class="character-details">
+                        <label class="character-name">Yun Jin</label>
+                        <span class="element">Elemento: Geo</span>
+                        <span class="weapon">Tipo de Arma: Catalizador</span>
+                        <span class="stars">Calidad: 4 estrellas</span>
+                    </div>
+                </button>            
+            </div>            
+        </div>
+        <div class="external-links">
+            <a href="https://discord.com/invite/genshinimpact" class="external-link" target="_blank">Discord</a>
+            <a href="https://www.reddit.com/r/Genshin_Impact/" class="external-link" target="_blank">Reddit</a>
+            <a href="https://www.facebook.com/Genshinimpact/" class="external-link" target="_blank">Facebook</a>
+        </div>
+    </div>
+    <script src="Scripts/Filtrar2.js"></script>
+    <script>
+        function redireccionarACharacters() {
+            window.location.href = 'Characters.html';
+        }
+        function redireccionarABuilds() {
+            window.location.href = 'Builds.html';
+        }
+        function redireccionarATeams() {
+            window.location.href = 'Teams.html';
+        }
+    </script>
+</body>
+</html>
